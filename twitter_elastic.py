@@ -51,12 +51,12 @@ for character in characters:
                 retweeted = False
 
             insert = connection.index(
-                index = 'twitter',
+                index = 'twitter_2',
                 id = i,
                 body = {
                     'name': tweet.user.name,
                     'user_id': tweet.user.id,
-                    'tweet_id': int(tweet.id_str), 
+                    'tweet_id': tweet.id_str, 
                     'date': tweet.created_at, 
                     'favs': tweet.favorite_count, 
                     'rts': tweet.retweet_count, 

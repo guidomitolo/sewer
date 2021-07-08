@@ -34,7 +34,7 @@ def create_index(es_object, index_name='twitter'):
                     "type": "text"
                 },
                 "user_id": {
-                    "type": "integer"
+                    "type": "text"
                 },
                 "tweet_id": {
                     "type": "text"
@@ -44,10 +44,10 @@ def create_index(es_object, index_name='twitter'):
                     "format": "yyyy-MM-dd'T'HH:mm:ss"
                 },
                 "favs": {
-                    "type": "integer"
+                    "type": "long"
                 },
                 "rts": {
-                    "type": "integer"
+                    "type": "long"
                 },
                 "tweet": {
                     "type": "text"
